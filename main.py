@@ -92,8 +92,6 @@ class TkinterApp:
 
     def merge_video_audio(self):
         # Checking if both video and audio paths available
-        print(self.video_path)
-        print(self.audio_path)
         if not self.video_path or not self.audio_path:
             return Label(self.app, text="Please upload video and video files", foreground="red").grid(row=4, columnspan=3, pady=10)
 
